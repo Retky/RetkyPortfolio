@@ -1,7 +1,9 @@
 import React from 'react';
+import Nav from './components/Nav';
+import './App.scss';
 
 const App = () => (
-  <div>Main Div</div>
+  <Nav />
 );
 
 export default App;
