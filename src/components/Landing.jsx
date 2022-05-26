@@ -4,10 +4,11 @@ import './Landing.scss';
 
 const Landing = () => (
   <section id="landing">
-    <div className="contWidth">
-      <h1>
-        Hey There
-        <span> I&apos;m Retky </span>
+    <div className="contWidth land">
+      <h1 className="hero">
+        Hey There.
+        <br />
+        I&apos;m Retky
       </h1>
       <p>
         <span> I&apos;m a Software Developer </span>

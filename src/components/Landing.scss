@@ -12,3 +12,16 @@
     margin: 5px;
   }
 }
+
+.land {
+  height: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 3rem;
+  color: darkorange;
+}
