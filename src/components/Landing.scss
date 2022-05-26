@@ -1,0 +1,14 @@
+#landing {
+  background: gray;
+  height: 100vh;
+}
+
+.socialMedia {
+  display: flex;
+  list-style: none;
+  padding: 0;
+
+  li {
+    margin: 5px;
+  }
+}
