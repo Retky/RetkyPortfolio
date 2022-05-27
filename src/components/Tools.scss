@@ -1,0 +1,24 @@
+#tools {
+  background: gray;
+  height: 100vh;
+}
+
+.tool {
+  box-sizing: border-box;
+  border-top: solid #fff 2px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.toolList {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
