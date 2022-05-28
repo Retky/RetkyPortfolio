@@ -3,6 +3,7 @@ import Nav from './components/Nav';
 import Landing from './components/Landing';
 import About from './components/About';
 import Tools from './components/Tools';
+import Contact from './components/Contact';
 import './App.scss';
 
 const App = () => (
@@ -11,6 +12,7 @@ const App = () => (
     <Landing />
     <About />
     <Tools />
+    <Contact />
   </div>
 );
 
