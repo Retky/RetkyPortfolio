@@ -1,0 +1,20 @@
+#header {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  background: #3c3a39;
+  color: #fff;
+}
+
+#navBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#navlist {
+  display: none;
+  margin: 0 0 0 auto;
+  padding: 0;
+  list-style: none;
+}

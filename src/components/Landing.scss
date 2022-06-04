@@ -1,0 +1,37 @@
+#landing {
+  background: #1c1a19;
+  color: #fff;
+  height: 100vh;
+
+  p {
+    line-height: 20px;
+
+    span {
+      font-size: 1.8rem;
+      color: #eed;
+    }
+  }
+}
+
+.socialMedia {
+  display: flex;
+  list-style: none;
+  padding: 0;
+
+  li {
+    margin: 5px;
+  }
+}
+
+.land {
+  height: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 3rem;
+  color: #ff6b00;
+}
