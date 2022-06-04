@@ -12,6 +12,7 @@ const Landing = () => (
       </h1>
       <p>
         <span> I&apos;m a Software Developer </span>
+        <br />
         I can help you build a product,
         feature or website Look through some of my work and experience!
         If you like what you see and have a project you need coded,
