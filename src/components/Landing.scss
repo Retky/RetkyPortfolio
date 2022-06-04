@@ -1,6 +1,11 @@
 #landing {
-  background: gray;
+  background: #1c1a19;
+  color: #fff;
   height: 100vh;
+
+  p {
+    line-height: 20px;
+  }
 }
 
 .socialMedia {
@@ -23,5 +28,5 @@
 
 h1 {
   font-size: 3rem;
-  color: darkorange;
+  color: #ff6b00;
 }
