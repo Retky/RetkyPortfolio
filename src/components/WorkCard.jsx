@@ -10,7 +10,7 @@ const WorkCard = (props) => {
   } = props;
 
   return (
-    <div id={id}>
+    <div id={id} className="WorkCard">
       <h4>{name}</h4>
       <p>{description}</p>
       <ul>

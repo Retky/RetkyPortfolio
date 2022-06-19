@@ -6,3 +6,43 @@
     border-bottom: solid #000 1px;
   }
 }
+
+.WorkCard {
+  height: 400px;
+  margin: 25px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  h4 {
+    font-size: 28px;
+    margin: 20px 16px;
+  }
+
+  p {
+    margin: auto 16px;
+  }
+
+  ul {
+    margin: auto 16px 0 16px;
+    padding: 0;
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+  }
+
+  li {
+    padding: 10px;
+    background: rgba(120, 120, 120, 0.25);
+    color: #fff;
+  }
+
+  button {
+    margin-top: 30px;
+    height: 50px;
+    background: #ff6b00;
+    color: #fff;
+    font-weight: bold;
+    border: solid #ff6b00 1px;
+  }
+}
