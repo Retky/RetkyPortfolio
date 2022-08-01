@@ -11,7 +11,7 @@ const About = () => (
         experience!
         If you like what you see and have a project you need coded, don’t hestiate to contact me.
       </p>
-      <button type="button" name="resume">Get My Resume</button>
+      <a href="https://docs.google.com/document/d/16QLVxjN6pPfF7RHXBKo2ItudBZH3dCyZmZaNX8rMxI8/edit"><button className="orangeBtn" type="button" name="resume">Get My Resume</button></a>
     </div>
   </section>
 );

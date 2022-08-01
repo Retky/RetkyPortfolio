@@ -18,7 +18,7 @@ const WorkCard = (props) => {
           <li key={tool}>{tool}</li>
         ))}
       </ul>
-      <button type="button">See Project</button>
+      <button className="orangeBtn" type="button">See Project</button>
     </div>
   );
 };

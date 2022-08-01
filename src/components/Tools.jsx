@@ -6,24 +6,25 @@ const Tools = () => (
     <div className="contWidth tool">
       <ul className="toolList">
         <h3>Language</h3>
+        <li>CSS</li>
+        <li>HTML</li>
         <li>JavaScript</li>
         <li>Ruby</li>
-        <li>HTML</li>
-        <li>CSS</li>
       </ul>
+
       <ul className="toolList">
         <h3>Frameworks</h3>
         <li>Bootstrap</li>
+        <li>PostgreSQL</li>
+        <li>React</li>
+        <li>RSpec</li>
         <li>Ruby on Rails</li>
-        <li>RSPec</li>
-        <li>CapyBara</li>
-        <li>Selenium</li>
+        <li>Sass</li>
       </ul>
+
       <ul className="toolList">
         <h3>Skills</h3>
-        <li>Codekit</li>
         <li>GitHub</li>
-        <li>Codepen</li>
         <li>GitLab</li>
         <li>Terminal</li>
       </ul>
