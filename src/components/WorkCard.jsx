@@ -1,16 +1,23 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+import workBg from '../img/workBg.png';
+
 const WorkCard = (props) => {
   const {
     id,
     name,
     description,
     topics,
+    preview,
   } = props;
 
+  const style = {
+    backgroundImage: (preview === '') ? `url(${workBg})` : `url(${preview})`,
+  };
+
   return (
-    <div id={id} className="WorkCard">
+    <div id={id} className="WorkCard" style={style}>
       <h4>{name}</h4>
       <p>{description}</p>
       <ul>
@@ -28,6 +35,7 @@ WorkCard.propTypes = {
   name: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
   topics: PropTypes.arrayOf(PropTypes.string).isRequired,
+  preview: PropTypes.string.isRequired,
 };
 
 export default WorkCard;
