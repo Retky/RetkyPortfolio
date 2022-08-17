@@ -17,11 +17,10 @@ const Works = () => {
               key={work.id}
               id={work.id}
               name={work.name}
-              description={work.description}
-              topics={work.topics}
-              homepage={work.homepage}
-              preview={work.preview}
               desc={work.desc}
+              topics={work.topics}
+              image={work.image}
+              imageHover={work.imageHover}
             />
           ))}
         </div>
