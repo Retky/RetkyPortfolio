@@ -1,27 +1,45 @@
-const initialState = [{
-  id: 1,
-  source: '/',
+import worksList from './workList';
 
-  name: 'Testing',
-  description: 'lorem ipsum',
-  topics: ['HTML', 'CSS', 'Bootstrap', 'ruby'],
-  homepage: '/',
+const gitUrl = 'https://api.github.com/repos/Retky/';
+const readUrl = 'https://raw.githubusercontent.com/retky/<WORKNAME>/main/README.md';
+const FETCH_WORKS = 'FETCH_WORKS';
+const initialState = [];
 
-  preview: '',
-  desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.',
-}, {
-  id: 1,
-  source: '/',
+const workBuilder = async (work) => {
+  const response = await fetch(gitUrl + work);
+  const data = await response.json();
+  const readme = await fetch(readUrl.replace('<WORKNAME>', work));
+  const readmeData = await readme.text();
+  const readDesc = await readmeData.slice(readmeData.indexOf('>'), readmeData.indexOf('\n##'));
+  const obj = {
+    id: await data.id,
+    // Preview
+    name: await data.name,
+    desc: await data.description,
+    topics: await data.topics,
+    image: '',
+    imageHover: '',
+    // Full
+    imageFull: '',
+    description: await readDesc,
+    homepage: await data.homepage,
+    live: await data.html_url,
+  };
+  return obj;
+};
 
-  name: 'Testing',
-  description: 'lorem ipsum',
-  topics: ['HTML', 'CSS', 'Bootstrap', 'ruby'],
-  homepage: '/',
+export const fetchWorks = () => async (dispatch) => {
+  const works = await Promise.all(worksList.map(workBuilder));
+  dispatch({ type: FETCH_WORKS, payload: works });
+};
 
-  preview: '',
-  desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.',
-}];
-
-const reducer = (state = initialState) => (state);
+const reducer = (state = initialState, action) => {
+  switch (action.type) {
+    case FETCH_WORKS:
+      return action.payload;
+    default:
+      return state;
+  }
+};
 
 export default reducer;

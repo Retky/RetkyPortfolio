@@ -1,10 +1,16 @@
-import React from 'react';
-import { useSelector } from 'react-redux';
+import React, { useEffect } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
+import { fetchWorks } from '../redux/works/worksR';
 import './Works.scss';
 import WorkCard from './WorkCard';
 
 const Works = () => {
-  const worksList = useSelector((state) => state);
+  const dispatch = useDispatch();
+  const worksList = useSelector((store) => store.works);
+
+  useEffect(() => {
+    dispatch(fetchWorks());
+  }, [dispatch]);
 
   return (
     <section id="works">

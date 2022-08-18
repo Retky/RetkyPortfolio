@@ -1,13 +1,10 @@
-import {
-  createStore,
-  applyMiddleware,
-} from 'redux';
-import thunk from 'redux-thunk';
+import { configureStore } from '@reduxjs/toolkit';
 import works from './works/worksR';
 
-const store = createStore(
-  works,
-  applyMiddleware(thunk),
-);
+const store = configureStore({
+  reducer: {
+    works,
+  },
+});
 
 export default store;
