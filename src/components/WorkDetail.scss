@@ -1,0 +1,17 @@
+.blurBg {
+  display: none;
+  background: #00000025;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  backdrop-filter: blur(5px);
+}
+
+.WorkDetail {
+  width: 300px;
+  min-height: 92vh;
+  margin: 4vh auto;
+  background: #fff;
+}

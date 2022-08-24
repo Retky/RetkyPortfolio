@@ -3,6 +3,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import { fetchWorks } from '../redux/works/worksR';
 import './Works.scss';
 import WorkCard from './WorkCard';
+import WorkDetail from './WorkDetail';
 
 const Works = () => {
   const dispatch = useDispatch();
@@ -31,6 +32,7 @@ const Works = () => {
           ))}
         </div>
       </div>
+      <WorkDetail />
     </section>
   );
 };
