@@ -1,7 +1,7 @@
 #landing {
   background: #1c1a19;
   color: #fff;
-  height: 100vh;
+  min-height: 100vh;
 
   p {
     line-height: 20px;
@@ -10,6 +10,10 @@
       font-size: 1.8rem;
       color: #eed;
     }
+  }
+
+  a {
+    color: #fff;
   }
 }
 

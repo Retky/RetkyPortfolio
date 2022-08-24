@@ -9,10 +9,10 @@ const Contact = () => (
         so if you&apos;d like to chat please get in touch.
       </h3>
       <form id="contactForm" action="https://formspree.io/f/mqknqqzb" method="post">
-        <input type="text" name="name" placeholder="Full Name" required />
-        <input type="email" name="mail" placeholder="Email Address" required />
+        <input className="formFile" type="text" name="name" placeholder="Full Name" required />
+        <input className="formFile" type="email" name="mail" placeholder="Email Address" required />
         <textarea name="message" placeholder="Enter Text Here" maxLength="500" required />
-        <input id="contactBtn" type="submit" value="Get in touch" />
+        <input id="contactBtn" className="orangeBtn" type="submit" value="Get in touch" />
       </form>
     </div>
   </section>
