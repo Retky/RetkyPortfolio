@@ -12,6 +12,7 @@ const WorkCard = (props) => {
     topics,
     image,
     imageHover,
+    seeWorkHandler,
   } = props;
   const [isHover, setIsHover] = useState(false);
 
@@ -40,7 +41,7 @@ const WorkCard = (props) => {
           <li key={tool}>{tool}</li>
         ))}
       </ul>
-      <button id={id} className="orangeBtn" type="button">See Project</button>
+      <button id={id} className="orangeBtn" type="button" onClick={seeWorkHandler}>See Project</button>
     </div>
   );
 };
@@ -52,6 +53,7 @@ WorkCard.propTypes = {
   topics: PropTypes.arrayOf(PropTypes.string).isRequired,
   image: PropTypes.string.isRequired,
   imageHover: PropTypes.string.isRequired,
+  seeWorkHandler: PropTypes.func.isRequired,
 };
 
 export default WorkCard;
