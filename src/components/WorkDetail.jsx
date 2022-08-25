@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import './WorkDetail.scss';
+import workPreview from '../img/workPreview.png';
 
 const WorkDetail = (props) => {
   const {
@@ -16,6 +17,21 @@ const WorkDetail = (props) => {
       <div className="WorkDetail">
         <div role="button" tabIndex={0} className="WorkDetail__close" onClick={() => setShowDetail(false)} onKeyDown={() => setShowDetail(false)}> X </div>
         <h3>{work.name}</h3>
+        <ul>
+          {work.topics.map((topic) => (<li key={topic}>{topic}</li>))}
+        </ul>
+        <div className="WorkDetailInfo">
+          <div className="WorkFullImageDiv">
+            <img src={work.imageFull === '' ? workPreview : work.imageFull} alt={work.name} />
+          </div>
+          <div className="WorkDetailDescrip">
+            {work.description}
+            <div className="WorkDetailLinks">
+              <button className="orangeBtn" type="button" onClick={() => window.open(work.homepage, '_blank')}> See Live </button>
+              <button className="orangeBtn" type="button" onClick={() => window.open(work.live, '_blank')}> See Source </button>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );

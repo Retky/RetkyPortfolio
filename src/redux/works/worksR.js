@@ -10,7 +10,7 @@ const workBuilder = async (work) => {
   const data = await response.json();
   const readme = await fetch(readUrl.replace('<WORKNAME>', work));
   const readmeData = await readme.text();
-  const readDesc = await readmeData.slice(readmeData.indexOf('>'), readmeData.indexOf('\n##'));
+  const readDesc = await readmeData.slice(readmeData.indexOf('>') + 1, readmeData.indexOf('\n##'));
   const obj = {
     id: await data.id,
     // Preview

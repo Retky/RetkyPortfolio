@@ -20,7 +20,6 @@ const Works = () => {
   });
 
   const seeWorkHandler = (e) => {
-    console.log(e.target.id);
     const indexId = worksList.findIndex((work) => work.id === Number(e.target.id));
     setWorkD({
       id: worksList[indexId].id,
