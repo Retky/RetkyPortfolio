@@ -2,6 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import './WorkDetail.scss';
 import workPreview from '../img/workPreview.png';
+import SrcIco from '../img/SrcIco.png';
+import LiveIco from '../img/LiveIco.png';
 
 const WorkDetail = (props) => {
   const {
@@ -15,10 +17,10 @@ const WorkDetail = (props) => {
   return (
     <div className="blurBg" style={showStyle}>
       <div className="WorkDetail">
-        <div role="button" tabIndex={0} className="WorkDetail__close" onClick={() => setShowDetail(false)} onKeyDown={() => setShowDetail(false)}> X </div>
+        <div role="button" tabIndex={0} className="WorkDetailClose" onClick={() => setShowDetail(false)} onKeyDown={() => setShowDetail(false)}> X </div>
         <h3>{work.name}</h3>
-        <ul>
-          {work.topics.map((topic) => (<li key={topic}>{topic}</li>))}
+        <ul className="topic">
+          {work.topics.map((topic) => (<li className="topicDetail" key={topic}>{topic}</li>))}
         </ul>
         <div className="WorkDetailInfo">
           <div className="WorkFullImageDiv">
@@ -27,8 +29,14 @@ const WorkDetail = (props) => {
           <div className="WorkDetailDescrip">
             {work.description}
             <div className="WorkDetailLinks">
-              <button className="orangeBtn" type="button" onClick={() => window.open(work.homepage, '_blank')}> See Live </button>
-              <button className="orangeBtn" type="button" onClick={() => window.open(work.live, '_blank')}> See Source </button>
+              <button className="orangeBtn" type="button" onClick={() => window.open(work.homepage, '_blank')}>
+                {'See Live '}
+                <img src={LiveIco} alt="Live" />
+              </button>
+              <button className="orangeBtn" type="button" onClick={() => window.open(work.live, '_blank')}>
+                {'See Source '}
+                <img src={SrcIco} alt="Source" />
+              </button>
             </div>
           </div>
         </div>

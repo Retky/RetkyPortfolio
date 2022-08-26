@@ -36,9 +36,9 @@ const WorkCard = (props) => {
     <div id={id} className="WorkCard" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} style={isHover ? styleHover : style}>
       <h4>{name}</h4>
       <p>{desc}</p>
-      <ul>
+      <ul className="topic">
         {topics.map((tool) => (
-          <li key={tool}>{tool}</li>
+          <li className="topicEl" key={tool}>{tool}</li>
         ))}
       </ul>
       <button id={id} className="orangeBtn" type="button" onClick={seeWorkHandler}>See Project</button>

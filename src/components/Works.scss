@@ -24,20 +24,6 @@
     margin: auto 16px;
   }
 
-  ul {
-    margin: auto 16px 0 16px;
-    padding: 0;
-    display: flex;
-    list-style: none;
-    justify-content: space-between;
-  }
-
-  li {
-    padding: 10px;
-    background: rgba(120, 120, 120, 0.25);
-    color: #fff;
-  }
-
   button {
     margin-top: 30px;
     height: 50px;
@@ -54,4 +40,24 @@
       margin-top: auto;
     }
   }
+}
+
+.topic {
+  margin: auto 16px 0 16px;
+  padding: 0;
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+}
+
+.topicEl {
+  padding: 10px;
+  background: rgba(120, 120, 120, 0.25);
+  color: #fff;
+}
+
+.topicDetail {
+  padding: 10px;
+  border: solid #000 1px;
+  margin: 10px 0;
 }

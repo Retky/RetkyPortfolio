@@ -9,10 +9,17 @@
 }
 
 .WorkDetail {
-  width: 300px;
-  min-height: 92vh;
+  box-sizing: border-box;
+  max-width: 300px;
+  max-height: 92vh;
   margin: 4vh auto;
   background: #fff;
+  padding: 15px 0;
+  overflow: auto;
+
+  h3 {
+    margin-top: 10px;
+  }
 }
 
 .WorkFullImageDiv {
@@ -22,4 +29,48 @@
     width: 100%;
     height: auto;
   }
+}
+
+.WorkDetailClose {
+  margin: 0 20px 0 auto;
+  width: 25px;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.workDetailInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.WorkDetailLinks {
+  width: 100%;
+  margin-top: 15px;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 10px;
+  gap: 10%;
+
+  button {
+    flex: 1;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.WorkDetailDescrip {
+  box-sizing: border-box;
+  padding: 20px 10px 0 10px;
 }
