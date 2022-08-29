@@ -12,6 +12,7 @@ const WorkCard = (props) => {
     topics,
     image,
     imageHover,
+    seeWorkHandler,
   } = props;
   const [isHover, setIsHover] = useState(false);
 
@@ -25,22 +26,24 @@ const WorkCard = (props) => {
 
   const style = {
     backgroundImage: (image === '') ? `url(${workBg})` : `url(${image})`,
+    backgroundSize: 'cover',
   };
 
   const styleHover = {
     backgroundImage: (imageHover === '') ? `url(${workBgHover})` : `url(${imageHover})`,
+    backgroundSize: 'cover',
   };
 
   return (
     <div id={id} className="WorkCard" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} style={isHover ? styleHover : style}>
       <h4>{name}</h4>
       <p>{desc}</p>
-      <ul>
+      <ul className="topic">
         {topics.map((tool) => (
-          <li key={tool}>{tool}</li>
+          <li className="topicEl" key={tool}>{tool}</li>
         ))}
       </ul>
-      <button id={id} className="orangeBtn" type="button">See Project</button>
+      <button id={id} className="orangeBtn" type="button" onClick={seeWorkHandler}>See Project</button>
     </div>
   );
 };
@@ -52,6 +55,7 @@ WorkCard.propTypes = {
   topics: PropTypes.arrayOf(PropTypes.string).isRequired,
   image: PropTypes.string.isRequired,
   imageHover: PropTypes.string.isRequired,
+  seeWorkHandler: PropTypes.func.isRequired,
 };
 
 export default WorkCard;
