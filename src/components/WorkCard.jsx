@@ -26,10 +26,12 @@ const WorkCard = (props) => {
 
   const style = {
     backgroundImage: (image === '') ? `url(${workBg})` : `url(${image})`,
+    backgroundSize: 'cover',
   };
 
   const styleHover = {
     backgroundImage: (imageHover === '') ? `url(${workBgHover})` : `url(${imageHover})`,
+    backgroundSize: 'cover',
   };
 
   return (
