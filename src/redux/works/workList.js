@@ -4,6 +4,7 @@ const worksList = [
   'SpaceTravelers',
   'StockAnalizer',
   'CreativeCourses-Page',
+  'Mv-MathMagicians',
 ];
 
 export default worksList;

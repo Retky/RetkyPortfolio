@@ -7,6 +7,17 @@
   }
 }
 
+#workList {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
+
 .WorkCard {
   height: 400px;
   margin: 25px 0;
@@ -39,6 +50,10 @@
     button {
       margin-top: auto;
     }
+  }
+
+  @media (min-width: 768px) {
+    width: 300px;
   }
 }
 
