@@ -7,11 +7,16 @@
 .tool {
   box-sizing: border-box;
   border-top: solid #fff 2px;
-  height: 100%;
+  min-height: 75vh;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    align-items: flex-start;
+  }
 }
 
 .toolList {
