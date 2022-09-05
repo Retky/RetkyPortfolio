@@ -12,7 +12,7 @@ const WorkDetail = (props) => {
     work,
   } = props;
 
-  const showStyle = { display: showDetail ? 'block' : 'none' };
+  const showStyle = { display: showDetail ? 'flex' : 'none' };
 
   return (
     <div className="blurBg" style={showStyle}>
