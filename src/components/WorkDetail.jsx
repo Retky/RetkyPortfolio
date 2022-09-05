@@ -16,19 +16,19 @@ const WorkDetail = (props) => {
 
   return (
     <div className="blurBg" style={showStyle}>
-      <div className="WorkDetail">
-        <div role="button" tabIndex={0} className="WorkDetailClose" onClick={() => setShowDetail(false)} onKeyDown={() => setShowDetail(false)}> X </div>
+      <div className="workDetail">
+        <div role="button" tabIndex={0} className="workDetailClose" onClick={() => setShowDetail(false)} onKeyDown={() => setShowDetail(false)}> X </div>
         <h3>{work.name}</h3>
         <ul className="topic">
           {work.topics.map((topic) => (<li className="topicDetail" key={topic}>{topic}</li>))}
         </ul>
-        <div className="WorkDetailInfo">
-          <div className="WorkFullImageDiv">
+        <div className="workDetailInfo">
+          <div className="workFullImageDiv">
             <img src={work.imageFull === '' ? workPreview : work.imageFull} alt={work.name} />
           </div>
-          <div className="WorkDetailDescrip">
+          <div className="workDetailDescrip">
             {work.description}
-            <div className="WorkDetailLinks">
+            <div className="workDetailLinks">
               <button className="orangeBtn" type="button" onClick={() => window.open(work.homepage, '_blank')}>
                 {'See Live '}
                 <img src={LiveIco} alt="Live" />

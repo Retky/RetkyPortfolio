@@ -8,7 +8,7 @@
   backdrop-filter: blur(5px);
 }
 
-.WorkDetail {
+.workDetail {
   box-sizing: border-box;
   max-width: 300px;
   max-height: 92vh;
@@ -20,9 +20,13 @@
   h3 {
     margin-top: 10px;
   }
+
+  @media (min-width: 768px) {
+    max-width: 1280px;
+  }
 }
 
-.WorkFullImageDiv {
+.workFullImageDiv {
   width: 100%;
 
   img {
@@ -31,7 +35,7 @@
   }
 }
 
-.WorkDetailClose {
+.workDetailClose {
   margin: 0 20px 0 auto;
   width: 25px;
   height: 25px;
@@ -48,9 +52,14 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
-.WorkDetailLinks {
+.workDetailLinks {
   width: 100%;
   margin-top: 15px;
   height: auto;
@@ -70,7 +79,7 @@
   }
 }
 
-.WorkDetailDescrip {
+.workDetailDescrip {
   box-sizing: border-box;
   padding: 20px 10px 0 10px;
 }
