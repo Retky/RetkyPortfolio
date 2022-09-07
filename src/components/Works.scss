@@ -63,12 +63,14 @@
   display: flex;
   list-style: none;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .topicEl {
   padding: 10px;
   background: rgba(120, 120, 120, 0.25);
   color: #fff;
+  margin: 5px 0;
 }
 
 .topicDetail {
