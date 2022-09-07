@@ -4,6 +4,7 @@ import { fetchWorks } from '../redux/works/worksR';
 import './Works.scss';
 import WorkCard from './WorkCard';
 import WorkDetail from './WorkDetail';
+import MainWork from './MainWork';
 
 const Works = () => {
   const dispatch = useDispatch();
@@ -41,7 +42,16 @@ const Works = () => {
     <section id="works">
       <div className="contWidth work">
         <h3>My Recent Works</h3>
-        <div id="featured">MainWork</div>
+        <div id="featured">
+          <MainWork
+            id={worksList[0].id}
+            name={worksList[0].name}
+            description={worksList[0].description}
+            topics={worksList[0].topics}
+            imageFull={worksList[0].imageFull}
+            seeWorkHandler={seeWorkHandler}
+          />
+        </div>
         <div id="workList">
           {worksList.map((work) => (
             <WorkCard
