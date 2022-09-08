@@ -62,13 +62,15 @@
   padding: 0;
   display: flex;
   list-style: none;
-  justify-content: space-between;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .topicEl {
   padding: 10px;
   background: rgba(120, 120, 120, 0.25);
   color: #fff;
+  margin: 5px 0;
 }
 
 .topicDetail {

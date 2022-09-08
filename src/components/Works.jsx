@@ -41,7 +41,6 @@ const Works = () => {
     <section id="works">
       <div className="contWidth work">
         <h3>My Recent Works</h3>
-        <div id="featured">MainWork</div>
         <div id="workList">
           {worksList.map((work) => (
             <WorkCard
