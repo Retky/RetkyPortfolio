@@ -1,10 +1,8 @@
 const worksList = [
   'CreativeCourses-Page',
   'SpaceTravelers',
-  // 'RentACar',
-  'RecipeApp',
+  'RentACar',
   'BudgetApp',
-  'Mv-PokemonInfo',
 ];
 
 export default worksList;
