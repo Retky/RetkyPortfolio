@@ -4,11 +4,11 @@ import './Nav.scss';
 const Nav = () => (
   <header id="header">
     <div id="navBar">
-      <div id="logo">Retky</div>
+      <a className="navText" href="#landing"><div id="logo">Retky</div></a>
       <nav id="navlist">
-        <li>Projects</li>
-        <li>About</li>
-        <li>Contacts</li>
+        <li><a href="#works">Projects</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
       </nav>
       <div id="burger">=</div>
     </div>
