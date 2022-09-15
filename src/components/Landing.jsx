@@ -8,7 +8,7 @@ const Landing = () => (
       <h1 className="hero">
         Hey There.
         <br />
-        I&apos;m J. Luis Arredondo
+        I&apos;m Luis Arredondo
       </h1>
       <p>
         <span> I&apos;m a Software Developer </span>
