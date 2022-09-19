@@ -50,7 +50,6 @@ const Works = () => {
               desc={work.desc}
               topics={work.topics}
               image={work.image}
-              imageHover={work.imageHover}
               seeWorkHandler={seeWorkHandler}
             />
           ))}
