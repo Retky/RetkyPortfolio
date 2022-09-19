@@ -38,7 +38,12 @@
 }
 
 #burger {
+  height: 30px;
+  width: 30px;
   display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
 
   @media (min-width: 768px) {
     display: none;
