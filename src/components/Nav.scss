@@ -44,3 +44,25 @@
     display: none;
   }
 }
+
+#burgerMenu {
+  max-width: 300px;
+  height: 100vh;
+  margin: 0 auto;
+  background: #3c3a392c;
+  padding: 50px 10px;
+  box-sizing: border-box;
+  z-index: -1;
+
+  li {
+    list-style: none;
+    border-bottom: 1px solid #666;
+  }
+
+  a {
+    color: #fff;
+    text-decoration: none;
+    padding: 25px 5px;
+    display: block;
+  }
+}
