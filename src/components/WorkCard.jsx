@@ -11,7 +11,6 @@ const WorkCard = (props) => {
     desc,
     topics,
     image,
-    imageHover,
     seeWorkHandler,
   } = props;
   const [isHover, setIsHover] = useState(false);
@@ -25,12 +24,12 @@ const WorkCard = (props) => {
   };
 
   const style = {
-    backgroundImage: (image === '') ? `url(${workBg})` : `url(${image})`,
+    backgroundImage: (image === '') ? `url(${workBg})` : `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1)), url(${image})`,
     backgroundSize: 'cover',
   };
 
   const styleHover = {
-    backgroundImage: (imageHover === '') ? `url(${workBgHover})` : `url(${imageHover})`,
+    backgroundImage: (image === '') ? `url(${workBgHover})` : `url(${image})`,
     backgroundSize: 'cover',
   };
 
@@ -54,7 +53,6 @@ WorkCard.propTypes = {
   desc: PropTypes.string.isRequired,
   topics: PropTypes.arrayOf(PropTypes.string).isRequired,
   image: PropTypes.string.isRequired,
-  imageHover: PropTypes.string.isRequired,
   seeWorkHandler: PropTypes.func.isRequired,
 };
 

@@ -11,8 +11,7 @@ const workBuilder = async (work) => {
   const readme = await fetch(readUrl.replace('<WORKNAME>', work));
   const readmeData = await readme.text();
   const readDesc = await readmeData.slice(readmeData.indexOf('>') + 1, readmeData.indexOf('\n##'));
-  const image = await fetch(`https://raw.githubusercontent.com/retky/${work}/dev/.preview/image.png`);
-  const imageHover = await fetch(`https://raw.githubusercontent.com/retky/${work}/dev/.preview/imageHover.png`);
+  const imageCard = await fetch(`https://raw.githubusercontent.com/retky/${work}/dev/.preview/imageCard.png`);
   const imageFull = await fetch(`https://raw.githubusercontent.com/retky/${work}/dev/.preview/imageFull.png`);
   const obj = {
     id: await data.id,
@@ -20,10 +19,9 @@ const workBuilder = async (work) => {
     name: await data.name,
     desc: await data.description,
     topics: await data.topics,
-    image: await image.status === 200 ? await image.url : '',
-    imageHover: await imageHover.status === 200 ? await imageHover.url : '',
+    image: (await imageCard.status) === 200 ? await imageCard.url : '',
     // Full
-    imageFull: await imageFull.status === 200 ? await imageFull.url : '',
+    imageFull: (await imageFull.status) === 200 ? await imageFull.url : '',
     description: await readDesc,
     homepage: await data.homepage,
     live: await data.html_url,
