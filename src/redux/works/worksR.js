@@ -30,7 +30,8 @@ const workBuilder = async (work) => {
 };
 
 export const fetchWorks = () => async (dispatch) => {
-  const works = await Promise.all(worksList.map(workBuilder));
+  const worksL = await worksList();
+  const works = await Promise.all(worksL.map(workBuilder));
   dispatch({ type: FETCH_WORKS, payload: works });
 };
 
