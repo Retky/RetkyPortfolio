@@ -1,22 +1,16 @@
-import React from 'react';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import Nav from './components/Nav';
-import Landing from './components/Landing';
-import Works from './components/Works';
-import About from './components/About';
-import Tools from './components/Tools';
-import Contact from './components/Contact';
-import Footer from './components/Footer';
-import './App.scss';
+import HomePage from './pages/HomePage';
+import './styles/App.scss';
 
 const App = () => (
-  <div>
-    <Nav />
-    <Landing />
-    <Works />
-    <About />
-    <Tools />
-    <Contact />
-    <Footer />
+  <div className='app'>
+    <Router>
+      <Nav />
+      <Routes>
+        <Route path='/' element={<HomePage />} />
+      </Routes>
+    </Router>
   </div>
 );
 
