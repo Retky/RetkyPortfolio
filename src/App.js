@@ -4,11 +4,11 @@ import HomePage from './pages/HomePage';
 import './styles/App.scss';
 
 const App = () => (
-  <div className='app'>
+  <div className="app">
     <Router>
       <Nav />
       <Routes>
-        <Route path='/' element={<HomePage />} />
+        <Route path="/" element={<HomePage />} />
       </Routes>
     </Router>
   </div>
