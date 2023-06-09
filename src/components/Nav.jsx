@@ -1,3 +1,5 @@
+import '../styles/Nav.scss';
+
 const Nav = () => {
   const element = (
     <header>
