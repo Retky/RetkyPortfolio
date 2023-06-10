@@ -12,7 +12,6 @@ const Nav = () => {
         </ul>
       </nav>
     </header>
-
   );
 
   return element;
