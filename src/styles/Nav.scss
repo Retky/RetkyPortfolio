@@ -9,4 +9,38 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  color: white;
+}
+
+nav {
+  .hamburger {
+    display: flex;
+  }
+
+  .page-links {
+    position: fixed;
+    background-color: gray;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    margin: 50px 0 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  @media screen and (min-width: 768px) {
+    .hamburger {
+      display: none;
+    }
+
+    .page-links {
+      position: inherit;
+      background-color: transparent;
+      width: auto;
+      height: auto;
+      margin: 0;
+      display: flex;
+    }
+  }
 }
