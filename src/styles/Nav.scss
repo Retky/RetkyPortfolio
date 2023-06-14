@@ -40,6 +40,10 @@ nav {
     display: none;
   }
 
+  .links-open {
+    display: flex;
+  }
+
   .page-links {
     @include adaptative-width;
 

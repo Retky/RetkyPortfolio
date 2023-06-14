@@ -1,13 +1,16 @@
+import { useState } from 'react';
 import '../styles/Nav.scss';
 
 const Nav = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
   const element = (
     <header>
       <div className="header">
         <div className="logo"> Retky </div>
         <nav>
-          <button type="button" className="hamburger" onClick={() => console.log('clicked')}>=</button>
-          <div className="links-list">
+          <button type="button" className="hamburger" onClick={() => setIsMenuOpen(!isMenuOpen)}>=</button>
+          <div role="menu" tabIndex={0} className={`links-list ${isMenuOpen ? 'links-open' : ''}`} onClick={() => setIsMenuOpen(false)} onKeyUp={() => {}}>
             <ul className="page-links">
               <li className="link">Projects</li>
               <li className="link">About</li>
