@@ -10,7 +10,7 @@ const Nav = () => {
         <div className="logo"> Retky </div>
         <nav>
           <button type="button" className="hamburger" onClick={() => setIsMenuOpen(!isMenuOpen)}>=</button>
-          <div className={`menu-container ${isMenuOpen ? 'links-open' : ''}`}>
+          <div className={`menu-container ${isMenuOpen ? 'menu-open' : ''}`}>
             <div className="menu-links" role="menu" tabIndex={0} onClick={() => setIsMenuOpen(false)} onKeyUp={() => {}}>
               <a className="link" href="#projects">Projects</a>
               <a className="link" href="#about">About</a>
