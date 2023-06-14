@@ -26,9 +26,10 @@ nav {
     background-color: transparent;
     border: none;
     color: white;
+    cursor: pointer;
   }
 
-  .links-list {
+  .menu-container {
     position: fixed;
     top: 0;
     left: 0;
@@ -44,16 +45,19 @@ nav {
     display: flex;
   }
 
-  .page-links {
+  .menu-links {
     @include adaptative-width;
 
     padding: 0 20px;
-    list-style: none;
+    display: flex;
+    flex-direction: column;
   }
 
   .link {
     border-bottom: 1px solid #666;
     padding: 25px 5px;
+    color: white;
+    text-decoration: none;
   }
 
   @media screen and (min-width: 768px) {
@@ -61,7 +65,7 @@ nav {
       display: none;
     }
 
-    .links-list {
+    .menu-container {
       display: inline;
       position: static;
       background-color: transparent;
@@ -70,8 +74,8 @@ nav {
       margin: 0;
     }
 
-    .page-links {
-      display: flex;
+    .menu-links {
+      flex-direction: row;
       width: auto;
       padding: 0;
     }

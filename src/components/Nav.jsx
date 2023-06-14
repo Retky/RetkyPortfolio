@@ -10,12 +10,12 @@ const Nav = () => {
         <div className="logo"> Retky </div>
         <nav>
           <button type="button" className="hamburger" onClick={() => setIsMenuOpen(!isMenuOpen)}>=</button>
-          <div role="menu" tabIndex={0} className={`links-list ${isMenuOpen ? 'links-open' : ''}`} onClick={() => setIsMenuOpen(false)} onKeyUp={() => {}}>
-            <ul className="page-links">
-              <li className="link">Projects</li>
-              <li className="link">About</li>
-              <li className="link">Contact</li>
-            </ul>
+          <div className={`menu-container ${isMenuOpen ? 'links-open' : ''}`}>
+            <div className="menu-links" role="menu" tabIndex={0} onClick={() => setIsMenuOpen(false)} onKeyUp={() => {}}>
+              <a className="link" href="#projects">Projects</a>
+              <a className="link" href="#about">About</a>
+              <a className="link" href="#contact">Contact</a>
+            </div>
           </div>
         </nav>
       </div>
