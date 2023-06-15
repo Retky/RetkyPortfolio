@@ -12,4 +12,22 @@
 
 .landing-content {
   @include adaptative-width;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: $main-orange;
+}
+
+.subtitle {
+  font-size: 1.8rem;
+  color: $light-orange;
+}
+
+.nowrap {
+  white-space: nowrap;
 }

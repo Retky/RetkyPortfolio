@@ -8,9 +8,14 @@ const Homepage = () => {
           <h1>
             Hello,
             <br />
+            <br />
             I&apos;m Luis Arredondo
             <br />
-            <span>Full-Stack Web & Video Game Developer.</span>
+            <span className="subtitle">
+              {'Full-Stack Web & '}
+              <span className="nowrap">Video Game</span>
+              {' Developer.'}
+            </span>
           </h1>
           <p>
             Are you looking to create captivating experiences and solve
