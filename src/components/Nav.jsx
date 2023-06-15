@@ -4,7 +4,7 @@ import '../styles/Nav.scss';
 const Nav = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  const element = (
+  const component = (
     <header>
       <div className="header">
         <div className="logo"> Retky </div>
@@ -22,7 +22,7 @@ const Nav = () => {
     </header>
   );
 
-  return element;
+  return component;
 };
 
 export default Nav;

@@ -1,3 +1,4 @@
+import SocialLinks from '../components/SocialLinks';
 import '../styles/HomePage.scss';
 
 const Homepage = () => {
@@ -18,9 +19,12 @@ const Homepage = () => {
             </span>
           </h1>
           <p>
-            Are you looking to create captivating experiences and solve
-            complex problems through the power of code? I can help you with that.
+            Are you looking to create captivating experiences and solve complex
+            problems through the power of code and 3D?
+            <br />
+            I can help you with that.
           </p>
+          <SocialLinks />
         </div>
       </div>
     </main>
