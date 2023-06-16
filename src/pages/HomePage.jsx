@@ -24,7 +24,10 @@ const Homepage = () => {
             <br />
             I can help you with that.
           </p>
-          <SocialLinks />
+          <SocialLinks
+            color="#fff"
+            section="landing"
+          />
         </div>
       </div>
     </main>

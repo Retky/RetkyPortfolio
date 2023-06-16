@@ -1,0 +1,20 @@
+.social-links {
+  list-style: none;
+  padding: 0;
+  display: flex;
+
+  li {
+    margin: 0.5rem;
+    font-size: 1.5rem;
+  }
+
+  :first-child {
+    margin-left: 0;
+  }
+}
+
+.landing-icons {
+  @media screen and (min-width: 768px) {
+    flex-direction: column;
+  }
+}

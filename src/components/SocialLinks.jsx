@@ -1,10 +1,15 @@
-const SocialLinks = () => {
+import PropTypes from 'prop-types';
+import '../styles/SocialLinks.scss';
+
+const SocialLinks = (props) => {
+  const { color, section } = props;
+
   const component = (
-    <ul>
-      <li>GH</li>
-      <li>LI</li>
-      <li>TW</li>
-      <li>MD</li>
+    <ul style={{ color }} className={`social-links ${section}-icons`}>
+      <li className="sLink">GH</li>
+      <li className="sLink">LI</li>
+      <li className="sLink">TW</li>
+      <li className="sLink">MD</li>
     </ul>
   );
 
@@ -12,3 +17,8 @@ const SocialLinks = () => {
 };
 
 export default SocialLinks;
+
+SocialLinks.propTypes = {
+  color: PropTypes.string.isRequired,
+  section: PropTypes.string.isRequired,
+};
