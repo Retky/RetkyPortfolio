@@ -1,3 +1,7 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {
+  faGithub, faLinkedin, faTwitter, faMedium,
+} from '@fortawesome/free-brands-svg-icons';
 import PropTypes from 'prop-types';
 import '../styles/SocialLinks.scss';
 
@@ -6,10 +10,18 @@ const SocialLinks = (props) => {
 
   const component = (
     <ul className={`social-links ${section}-icons`}>
-      <li className="sLink">GH</li>
-      <li className="sLink">LI</li>
-      <li className="sLink">TW</li>
-      <li className="sLink">MD</li>
+      <li>
+        <FontAwesomeIcon icon={faGithub} />
+      </li>
+      <li>
+        <FontAwesomeIcon icon={faLinkedin} />
+      </li>
+      <li>
+        <FontAwesomeIcon icon={faTwitter} />
+      </li>
+      <li>
+        <FontAwesomeIcon icon={faMedium} />
+      </li>
     </ul>
   );
 
