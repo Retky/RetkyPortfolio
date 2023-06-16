@@ -10,18 +10,18 @@ const SocialLinks = (props) => {
 
   const component = (
     <ul className={`social-links ${section}-icons`}>
-      <li>
+      <a href="https://github.com/Retky" target="_blank" rel="noreferrer">
         <FontAwesomeIcon icon={faGithub} />
-      </li>
-      <li>
+      </a>
+      <a href="https://www.linkedin.com/in/retky/" target="_blank" rel="noreferrer">
         <FontAwesomeIcon icon={faLinkedin} />
-      </li>
-      <li>
+      </a>
+      <a href="https://twitter.com/retkyFox" target="_blank" rel="noreferrer">
         <FontAwesomeIcon icon={faTwitter} />
-      </li>
-      <li>
+      </a>
+      <a href="https://medium.com/@retky" target="_blank" rel="noreferrer">
         <FontAwesomeIcon icon={faMedium} />
-      </li>
+      </a>
     </ul>
   );
 
