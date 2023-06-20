@@ -3,7 +3,6 @@
 .landing {
   @include full-height;
 
-  width: 100vw;
   display: flex;
   justify-content: center;
   background-color: $dark-bg;

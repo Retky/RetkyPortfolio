@@ -31,6 +31,13 @@ const Homepage = () => {
           />
         </div>
       </div>
+      {/* <div className="projects">
+      </div> */}
+      {/* <div className="about">
+        a
+      </div> */}
+      {/* <div className="contact">
+      </div> */}
     </main>
   );
 
