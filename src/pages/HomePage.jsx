@@ -44,43 +44,45 @@ const Homepage = () => {
           </div>
         </div>
         <div className="stack">
-          <ul>
-            <h3>Languages</h3>
-            <li>JavaScript</li>
-            <li>Ruby</li>
-            <li>C#</li>
-            <li>PostgreSQL</li>
-            <li>SQL</li>
-            <li>Lua</li>
-            <li>HTML</li>
-            <li>CSS</li>
-          </ul>
-          <ul>
-            <h3>Libraries & Frameworks</h3>
-            <li>React</li>
-            <li>Redux</li>
-            <li>Node.js</li>
-            <li>Ruby on Rails</li>
-            <li>SCSS</li>
-            <li>Bootstrap</li>
-            <li>Webpack</li>
-            <li>Jest</li>
-            <li>Rspec</li>
-          </ul>
-          <ul>
-            <h3>Tools</h3>
-            <li>Git</li>
-            <li>GitHub</li>
-            <li>Firebase</li>
-            <li>Postman</li>
-            <li>Heroku</li>
-            <li>Netlify</li>
-            <li>Unity</li>
-            <li>Unreal Engine</li>
-            <li>Blender</li>
-            <li>3DS Max</li>
-            <li>Figma</li>
-          </ul>
+          <div className="stack-content">
+            <ul>
+              <h3>Languages</h3>
+              <li>JavaScript</li>
+              <li>Ruby</li>
+              <li>C#</li>
+              <li>PostgreSQL</li>
+              <li>SQL</li>
+              <li>Lua</li>
+              <li>HTML</li>
+              <li>CSS</li>
+            </ul>
+            <ul>
+              <h3>Libraries & Frameworks</h3>
+              <li>React</li>
+              <li>Redux</li>
+              <li>Node.js</li>
+              <li>Ruby on Rails</li>
+              <li>SCSS</li>
+              <li>Bootstrap</li>
+              <li>Webpack</li>
+              <li>Jest</li>
+              <li>Rspec</li>
+            </ul>
+            <ul>
+              <h3>Tools</h3>
+              <li>Git</li>
+              <li>GitHub</li>
+              <li>Firebase</li>
+              <li>Postman</li>
+              <li>Heroku</li>
+              <li>Netlify</li>
+              <li>Unity</li>
+              <li>Unreal Engine</li>
+              <li>Blender</li>
+              <li>3DS Max</li>
+              <li>Figma</li>
+            </ul>
+          </div>
         </div>
       </div>
       {/* <div className="contact">

@@ -1,6 +1,6 @@
 @import "Variables";
 
-.landing {
+.landing, .about, .stack {
   @include full-height;
 
   background-color: $dark-bg;
@@ -38,16 +38,12 @@ h1 {
   color: $light-orange;
 }
 
-.about {
-  @include full-height;
-
-  background-color: $dark-bg;
-}
-
 .about-content {
   @include adaptative-width;
+}
 
-  color: #fff;
+.stack-content {
+  @include adaptative-width;
 }
 
 .nowrap {
