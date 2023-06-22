@@ -33,13 +33,15 @@ const Homepage = () => {
       </div>
       {/* <div className="projects">
       </div> */}
-      <div className="about">
-        <div className="about-content">
-          <h2>About Me</h2>
-          <p>
-            a
-          </p>
-          <button type="button">Get My Resume</button>
+      <div id="about">
+        <div className="about">
+          <div className="about-content">
+            <h2>About Me</h2>
+            <p>
+              a
+            </p>
+            <button type="button">Get My Resume</button>
+          </div>
         </div>
         <div className="stack">
           <ul>

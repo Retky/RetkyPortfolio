@@ -3,8 +3,6 @@
 .landing {
   @include full-height;
 
-  display: flex;
-  justify-content: center;
   background-color: $dark-bg;
   color: #fff;
 }
@@ -38,6 +36,18 @@ h1 {
 .subtitle {
   font-size: 1.8rem;
   color: $light-orange;
+}
+
+.about {
+  @include full-height;
+
+  background-color: $dark-bg;
+}
+
+.about-content {
+  @include adaptative-width;
+
+  color: #fff;
 }
 
 .nowrap {

@@ -21,6 +21,8 @@ $light-orange: #fff3d7;
 
 @mixin full-height {
   min-height: 100vh;
+  display: flex;
+  justify-content: center;
 
   & > div {
     margin-top: 50px;
