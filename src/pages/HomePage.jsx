@@ -45,7 +45,7 @@ const Homepage = () => {
         </div>
         <div className="stack">
           <div className="stack-content">
-            <ul>
+            <ul className="stack-list">
               <h3>Languages</h3>
               <li>JavaScript</li>
               <li>Ruby</li>
@@ -56,7 +56,7 @@ const Homepage = () => {
               <li>HTML</li>
               <li>CSS</li>
             </ul>
-            <ul>
+            <ul className="stack-list">
               <h3>Libraries & Frameworks</h3>
               <li>React</li>
               <li>Redux</li>
@@ -68,7 +68,7 @@ const Homepage = () => {
               <li>Jest</li>
               <li>Rspec</li>
             </ul>
-            <ul>
+            <ul className="stack-list">
               <h3>Tools</h3>
               <li>Git</li>
               <li>GitHub</li>
