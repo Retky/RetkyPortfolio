@@ -50,7 +50,6 @@ const Homepage = () => {
               <li>JavaScript</li>
               <li>Ruby</li>
               <li>C#</li>
-              <li>PostgreSQL</li>
               <li>SQL</li>
               <li>Lua</li>
               <li>HTML</li>
