@@ -9,6 +9,7 @@
 
 .contact {
   background-color: $light-bg;
+  color: $dark-bg;
 }
 
 .landing-content {
@@ -78,6 +79,10 @@ h1 {
 
 .contact-content {
   @include adaptative-width;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .nowrap {
