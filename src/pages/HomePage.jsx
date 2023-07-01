@@ -38,7 +38,34 @@ const Homepage = () => {
           <div className="about-content">
             <h2>About Me</h2>
             <p>
-              a
+              I&apos;m Retky, a versatile Full-stack and Videogame Developer with a passion for
+              creating immersive experiences.
+              <br />
+              My background in architecture brought me skills in design thinking, resource
+              management, and user-centric approaches. Also have a natural ability to adapt quickly
+              to new programming languages, leveraging my existing knowledge to build dynamic and
+              seamless solutions.
+            </p>
+            <p>
+              As a Full-stack Developer, I excel in developing cutting-edge web applications and
+              platforms.
+              <br />
+              I have a knack for developing visually stunning and user-friendly interfaces that
+              captivate users. On the backend, I specialize in building robust and scalable
+              server-side solutions that seamlessly integrate with front-end frameworks and APIs.
+            </p>
+            <p>
+              My passion for video game development shines through in my work as a Generalist.
+              I possess a strong command over 3D and 2D asset creation, as well as designing
+              engaging gameplay and mechanics. Crafting captivating and immersive experiences
+              for players.
+            </p>
+            <p>
+              Throughout my career, I have honed essential soft skills such as collaboration,
+              communication, and problem-solving. I thrive in remote work environments, where
+              I value teamwork and embrace pair programming. Additionally, my experience as a
+              mentor has allowed me to guide and inspire fellow developers, fostering a positive
+              and productive working atmosphere.
             </p>
             <button type="button">Get My Resume</button>
           </div>
