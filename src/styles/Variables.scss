@@ -29,3 +29,12 @@ $light-orange: #fff3d7;
     margin-top: 50px;
   }
 }
+
+@mixin content-aurea {
+  display: flex;
+  flex-direction: column;
+
+  @media screen and (min-width: 768px) {
+    padding: 100px 20px;
+  }
+}
