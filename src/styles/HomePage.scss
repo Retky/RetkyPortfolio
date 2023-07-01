@@ -45,6 +45,10 @@ h1 {
 
 .about-content {
   @include adaptative-width;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .stack-content {
@@ -93,6 +97,7 @@ h1 {
   padding: 10px 20px;
   font-size: 1.2rem;
   margin: 10px 0;
+  width: 240px;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
 
