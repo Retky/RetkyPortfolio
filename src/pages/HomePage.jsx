@@ -67,7 +67,7 @@ const Homepage = () => {
               mentor has allowed me to guide and inspire fellow developers, fostering a positive
               and productive working atmosphere.
             </p>
-            <button type="button">Get My Resume</button>
+            <button className="orange-btn" type="button">Get My Resume</button>
           </div>
         </div>
         <div className="stack">

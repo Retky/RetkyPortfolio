@@ -85,6 +85,26 @@ h1 {
   justify-content: center;
 }
 
+.orange-btn {
+  background-color: $main-orange;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  margin: 10px 0;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    background-color: $light-orange;
+  }
+
+  &:active {
+    background-color: $dark-orange;
+  }
+}
+
 .nowrap {
   white-space: nowrap;
 }
