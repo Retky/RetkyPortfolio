@@ -86,7 +86,39 @@ h1 {
 
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-items: center;
+  padding: 100px 20px;
+
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  @media screen and (min-width: 768px) {
+    padding: 100px 20px;
+  }
+}
+
+@mixin form-box {
+  width: 100%;
+  max-width: 600px;
+  border: none;
+  padding: 5px;
+  margin-top: 20px;
+}
+
+.form-file {
+  @include form-box;
+  border-bottom: solid $light-gray 1px;
+  background: none;
+}
+
+.form-msg {
+  @include form-box;
+  height: 150px;
+  margin-bottom: 30px;
+  background: #eee;
 }
 
 .orange-btn {
