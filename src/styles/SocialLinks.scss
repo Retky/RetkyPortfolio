@@ -1,5 +1,23 @@
 @import 'variables';
 
+.landing-icons {
+  color: #fff;
+
+  @media screen and (min-width: 768px) {
+    flex-direction: column;
+    justify-content: center;
+    order: -1;
+
+    a {
+      margin: 1rem 5rem 1rem 0;
+    }
+  }
+}
+
+.footer-icons a {
+  color: $dark-bg;
+}
+
 .social-links {
   padding: 0;
   display: flex;
@@ -17,25 +35,7 @@
   }
 }
 
-.landing-icons {
-  color: #fff;
-
-  @media screen and (min-width: 768px) {
-    flex-direction: column;
-    justify-content: center;
-    order: -1;
-
-    a {
-      margin: 1rem 5rem 1rem 0;
-    }
-  }
-}
-
 .footer-icons {
-  a {
-    color: $dark-bg;
-  }
-
   a:visited {
     color: $gray;
   }

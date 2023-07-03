@@ -23,12 +23,14 @@
 
 .form-file {
   @include form-box;
+
   border-bottom: solid $light-gray 1px;
   background: none;
 }
 
 .form-msg {
   @include form-box;
+
   height: 150px;
   background: #eee;
 }

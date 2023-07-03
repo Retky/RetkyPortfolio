@@ -1,13 +1,18 @@
 @import "Variables";
 
-.landing, .projects, .about, .stack, .contact {
+.landing,
+.projects,
+.about,
+.stack,
+.contact {
   @include full-height;
 
   background-color: $dark-bg;
   color: #fff;
 }
 
-.projects, .contact {
+.projects,
+.contact {
   background-color: $light-bg;
   color: $dark-bg;
 }
