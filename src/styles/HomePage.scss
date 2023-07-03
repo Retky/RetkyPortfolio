@@ -12,45 +12,6 @@
   color: $dark-bg;
 }
 
-.about-content {
-  @include adaptative-width;
-  @include content-aurea;
-
-  h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-    color: $main-orange;
-  }
-}
-
-.stack-content {
-  @include adaptative-width;
-  @include content-aurea;
-
-  border-top: $light-gray solid 2px;
-  justify-content: center;
-
-  h3 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-  }
-
-  @media screen and (min-width: 768px) {
-    flex-direction: row;
-    justify-content: space-around;
-  }
-}
-
-.stack-list {
-  list-style: none;
-  padding: 0;
-  text-align: center;
-
-  li {
-    padding: 3px;
-  }
-}
-
 .contact-content {
   @include adaptative-width;
   @include content-aurea;
