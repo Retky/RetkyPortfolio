@@ -12,39 +12,6 @@
   color: $dark-bg;
 }
 
-.contact-content {
-  @include adaptative-width;
-  @include content-aurea;
-
-  align-items: center;
-
-  h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-    text-align: center;
-  }
-}
-
-@mixin form-box {
-  width: 100%;
-  max-width: 600px;
-  border: none;
-  padding: 5px;
-  margin-top: 20px;
-}
-
-.form-file {
-  @include form-box;
-  border-bottom: solid $light-gray 1px;
-  background: none;
-}
-
-.form-msg {
-  @include form-box;
-  height: 150px;
-  background: #eee;
-}
-
 .orange-btn {
   background-color: $main-orange;
   color: #fff;
