@@ -14,10 +14,6 @@
   }
 }
 
-.footer-icons a {
-  color: $dark-bg;
-}
-
 .social-links {
   padding: 0;
   display: flex;
@@ -36,6 +32,10 @@
 }
 
 .footer-icons {
+  a {
+    color: $dark-bg;
+  }
+
   a:visited {
     color: $gray;
   }
