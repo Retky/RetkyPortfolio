@@ -1,9 +1,9 @@
 import { configureStore } from '@reduxjs/toolkit';
-import works from './works/worksR';
+import portfolio from './portfolio';
 
 const store = configureStore({
   reducer: {
-    works,
+    portfolio,
   },
 });
 
