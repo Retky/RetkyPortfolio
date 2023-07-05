@@ -3,7 +3,7 @@ import '../styles/Landing.scss';
 
 const Landing = () => {
   const view = (
-    <div className="landing">
+    <div id="home" className="landing">
       <div className="landing-content">
         <div className="presentation">
           <h1>

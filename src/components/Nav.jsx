@@ -9,7 +9,7 @@ const Nav = () => {
   const component = (
     <header>
       <div className="header">
-        <div className="logo"> Retky </div>
+        <a href="#home" className="logo"> Retky </a>
         <nav>
           <button type="button" className="hamburger" onClick={() => setIsMenuOpen(!isMenuOpen)}>
             <FontAwesomeIcon icon={faBars} />
