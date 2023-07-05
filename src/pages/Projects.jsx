@@ -11,8 +11,6 @@ const Projects = () => {
     dispatch(fetchProjectsData());
   }, [dispatch]);
 
-  console.log(projectsList);
-
   const view = (
     <div id="projects" className="projects">
       <div className="projects-content">

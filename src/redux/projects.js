@@ -10,7 +10,6 @@ const fetchProjectsList = async () => {
   const data = await response.json();
   const projects = [];
   Object.keys(data).forEach((key) => { projects.push(data[key]); });
-  console.log(projects);
   return projects;
 };
 
