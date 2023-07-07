@@ -1,39 +1,38 @@
-import React from 'react';
 import PropTypes from 'prop-types';
-import './WorkDetail.scss';
-import workPreview from '../img/workPreview.png';
+import projectPreview from '../img/projectPreview.png';
 import SrcIco from '../img/SrcIco.png';
 import LiveIco from '../img/LiveIco.png';
+import '../styles/DetailsPop.scss';
 
-const WorkDetail = (props) => {
+const ProjectDetails = (props) => {
   const {
     showDetail,
     setShowDetail,
-    work,
+    project,
   } = props;
 
   const showStyle = { display: showDetail ? 'flex' : 'none' };
 
-  return (
+  const view = (
     <div className="blurBg" style={showStyle}>
       <div className="workDetail">
         <div role="button" tabIndex={0} className="workDetailClose" onClick={() => setShowDetail(false)} onKeyDown={() => setShowDetail(false)}> X </div>
-        <h3>{work.name}</h3>
+        <h3>{project.name}</h3>
         <ul className="topic">
-          {work.topics.map((topic) => (<li className="topicDetail" key={topic}>{topic}</li>))}
+          {project.topics.map((topic) => (<li className="topicDetail" key={topic}>{topic}</li>))}
         </ul>
         <div className="workDetailInfo">
           <div className="workFullImageDiv">
-            <img src={work.imageFull === '' ? workPreview : work.imageFull} alt={work.name} />
+            <img src={project.imageFull === '' ? projectPreview : project.imageFull} alt={project.name} />
           </div>
           <div className="workDetailDescrip">
-            {work.description}
+            {project.description}
             <div className="workDetailLinks">
-              <button className="orangeBtn" type="button" onClick={() => window.open(work.homepage, '_blank')}>
+              <button className="orange-btn" type="button" onClick={() => window.open(project.homepage, '_blank')}>
                 {'See Live '}
                 <img src={LiveIco} alt="Live" />
               </button>
-              <button className="orangeBtn" type="button" onClick={() => window.open(work.live, '_blank')}>
+              <button className="orange-btn" type="button" onClick={() => window.open(project.live, '_blank')}>
                 {'See Source '}
                 <img src={SrcIco} alt="Source" />
               </button>
@@ -43,12 +42,14 @@ const WorkDetail = (props) => {
       </div>
     </div>
   );
+
+  return view;
 };
 
-WorkDetail.propTypes = {
+ProjectDetails.propTypes = {
   showDetail: PropTypes.bool.isRequired,
   setShowDetail: PropTypes.func.isRequired,
-  work: PropTypes.shape({
+  project: PropTypes.shape({
     id: PropTypes.number.isRequired,
     name: PropTypes.string.isRequired,
     topics: PropTypes.arrayOf(PropTypes.string).isRequired,
@@ -59,4 +60,4 @@ WorkDetail.propTypes = {
   }).isRequired,
 };
 
-export default WorkDetail;
+export default ProjectDetails;

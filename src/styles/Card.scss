@@ -1,22 +1,4 @@
-.work {
-  padding-bottom: 50px;
-
-  h3 {
-    padding-bottom: 50px;
-    border-bottom: solid #000 1px;
-  }
-}
-
-#workList {
-  display: flex;
-  flex-direction: column;
-
-  @media (min-width: 768px) {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-  }
-}
+@import 'variables.scss';
 
 .WorkCard {
   height: 400px;
@@ -25,6 +7,7 @@
   flex-direction: column;
   justify-content: space-between;
   color: #fff;
+  border-radius: 10px;
 
   h4 {
     font-size: 28px;
@@ -73,8 +56,7 @@
   margin: 5px 0;
 }
 
-.topicDetail {
-  padding: 10px;
-  border: solid #000 1px;
-  margin: 10px 0;
+.wide-btn {
+  width: 100% !important;
+  margin: 0;
 }

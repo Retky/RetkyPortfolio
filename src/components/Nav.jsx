@@ -1,28 +1,32 @@
-import React, { useState } from 'react';
-import './Nav.scss';
+import { useState } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
+import '../styles/Nav.scss';
 
 const Nav = () => {
-  const [displayMenu, setDisplayMenu] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  const hideNav = { display: displayMenu ? 'block' : 'none' };
-  return (
-    <header id="header">
-      <div id="navBar">
-        <a className="navText" href="#landing"><div id="logo">Retky</div></a>
-        <nav id="navlist">
-          <li><a href="#works">Projects</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#contact">Contact</a></li>
+  const component = (
+    <header>
+      <div className="header">
+        <a href="#home" className="logo"> Retky </a>
+        <nav>
+          <button type="button" className="hamburger" onClick={() => setIsMenuOpen(!isMenuOpen)}>
+            <FontAwesomeIcon icon={faBars} />
+          </button>
+          <div className={`menu-container ${isMenuOpen ? 'menu-open' : ''}`}>
+            <div className="menu-links" role="menu" tabIndex={0} onClick={() => setIsMenuOpen(false)} onKeyUp={() => {}}>
+              <a className="link" href="#projects">Projects</a>
+              <a className="link" href="#about">About</a>
+              <a className="link" href="#contact">Contact</a>
+            </div>
+          </div>
         </nav>
-        <div id="burger" role="menu" tabIndex={0} onClick={() => setDisplayMenu(!displayMenu)} onKeyDown={() => setDisplayMenu(!displayMenu)}>=</div>
-      </div>
-      <div id="burgerMenu" style={hideNav}>
-        <li><a href="#works" onClick={() => setDisplayMenu(!displayMenu)}>Projects</a></li>
-        <li><a href="#about" onClick={() => setDisplayMenu(!displayMenu)}>About</a></li>
-        <li><a href="#contact" onClick={() => setDisplayMenu(!displayMenu)}>Contact</a></li>
       </div>
     </header>
   );
+
+  return component;
 };
 
 export default Nav;

@@ -1,0 +1,42 @@
+@import 'variables';
+
+.landing-icons {
+  color: #fff;
+
+  @media screen and (min-width: 768px) {
+    flex-direction: column;
+    justify-content: center;
+    order: -1;
+
+    a {
+      margin: 1rem 5rem 1rem 0 !important;
+    }
+  }
+}
+
+.social-links {
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0;
+
+  a {
+    margin: 1rem;
+    font-size: 1.5rem;
+    color: $light-bg;
+  }
+}
+
+.footer-icons {
+  a {
+    color: $dark-bg;
+  }
+
+  a:visited {
+    color: $gray;
+  }
+}
+
+.social-links a:visited {
+  color: $light-gray;
+}

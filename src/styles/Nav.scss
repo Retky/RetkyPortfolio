@@ -1,0 +1,95 @@
+@import "Variables";
+
+header {
+  position: fixed;
+  top: 0;
+  height: 50px;
+  width: 100%;
+  background-color: $gray;
+  display: flex;
+  justify-content: center;
+}
+
+.header {
+  @include adaptative-width;
+
+  color: white;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-decoration: none;
+  color: white;
+}
+
+nav {
+  .hamburger {
+    display: flex;
+    background-color: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+  }
+
+  .menu-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: $gray;
+    margin: 50px 0 0;
+    justify-content: center;
+    display: none;
+  }
+
+  .menu-open {
+    display: flex;
+  }
+
+  .menu-links {
+    @include adaptative-width;
+
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .link {
+    border-bottom: 1px solid #666;
+    padding: 25px 0;
+    color: white;
+    text-decoration: none;
+  }
+
+  @media screen and (min-width: 768px) {
+    .hamburger {
+      display: none;
+    }
+
+    .menu-container {
+      display: inline;
+      position: static;
+      background-color: transparent;
+      height: auto;
+      width: auto;
+      margin: 0;
+    }
+
+    .menu-links {
+      flex-direction: row;
+      width: auto;
+      padding: 0;
+    }
+
+    .link {
+      border-bottom: none;
+      padding: 0 15px;
+    }
+  }
+}
