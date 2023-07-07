@@ -25,10 +25,6 @@
     font-size: 1.5rem;
     color: $light-bg;
   }
-
-  a:visited {
-    color: $light-gray;
-  }
 }
 
 .footer-icons {
@@ -39,4 +35,8 @@
   a:visited {
     color: $gray;
   }
+}
+
+.social-links a:visited {
+  color: $light-gray;
 }
