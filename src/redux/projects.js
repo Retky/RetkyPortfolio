@@ -1,5 +1,5 @@
 const gitUrl = 'https://api.github.com/repos/Retky/';
-const readUrl = 'https://raw.githubusercontent.com/retky/<WORKNAME>/main/README.md';
+const readUrl = 'https://raw.githubusercontent.com/retky/<PROJECTNAME>/main/README.md';
 const FETCH_PROJECTS_DATA = 'FETCH_PROJECTS_DATA';
 const initialState = [];
 
@@ -16,7 +16,7 @@ const fetchProjectsList = async () => {
 const projectBuilder = async (projectName) => {
   const response = await fetch(gitUrl + projectName);
   const data = await response.json();
-  const readme = await fetch(readUrl.replace('<WORKNAME>', projectName));
+  const readme = await fetch(readUrl.replace('<PROJECTNAME>', projectName));
   const readmeData = await readme.text();
   const readDesc = await readmeData.slice(readmeData.indexOf('>') + 1, readmeData.indexOf('\n##'));
   const imageCard = await fetch(`https://raw.githubusercontent.com/retky/${projectName}/dev/.preview/imageCard.png`);

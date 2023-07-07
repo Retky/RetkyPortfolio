@@ -1,0 +1,62 @@
+@import 'variables.scss';
+
+.WorkCard {
+  height: 400px;
+  margin: 25px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: #fff;
+  border-radius: 10px;
+
+  h4 {
+    font-size: 28px;
+    margin: 20px 16px;
+  }
+
+  p {
+    margin: auto 16px;
+  }
+
+  button {
+    margin-top: 30px;
+    height: 50px;
+  }
+
+  &:hover {
+    h4,
+    p,
+    ul {
+      display: none;
+    }
+
+    button {
+      margin-top: auto;
+    }
+  }
+
+  @media (min-width: 768px) {
+    width: 300px;
+  }
+}
+
+.topic {
+  margin: auto 16px 0 16px;
+  padding: 0;
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.topicEl {
+  padding: 10px;
+  background: rgba(120, 120, 120, 0.25);
+  color: #fff;
+  margin: 5px 0;
+}
+
+.wide-btn {
+  width: 100% !important;
+  margin: 0;
+}

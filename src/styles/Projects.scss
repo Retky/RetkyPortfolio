@@ -38,3 +38,14 @@
   border-bottom: none !important;
   font-weight: bold;
 }
+
+.projects-dev {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
