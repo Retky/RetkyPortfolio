@@ -11,12 +11,10 @@ $light-orange: #ffa565;
   width: 100vw;
   box-sizing: border-box;
   padding: 0 20px;
-  border: solid goldenrod 1px;
 
   @media screen and (min-width: 768px) {
     max-width: 1500px;
     padding: 0 20px;
-    border: solid goldenrod 1px;
   }
 }
 
