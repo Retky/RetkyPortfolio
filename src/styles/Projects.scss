@@ -1,0 +1,51 @@
+@import "Variables";
+
+.projects-content {
+  @include adaptative-width;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  padding: 5px 0;
+
+  & > button {
+    color: $gray;
+    border-left: 1px solid gray;
+    border-bottom: 1px solid gray;
+  }
+
+  & > button:first-child {
+    border-left: none;
+  }
+}
+
+.menu-btn {
+  flex-grow: 1;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+  outline: none;
+  padding: 0;
+  transition: color 0.2s ease-in-out;
+}
+
+.active {
+  color: $light-gray;
+  border-bottom: none !important;
+  font-weight: bold;
+}
+
+.projects-dev {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}

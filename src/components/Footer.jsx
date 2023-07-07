@@ -1,13 +1,15 @@
-import React from 'react';
-import Social from './Social';
-import './Footer.scss';
+import SocialLinks from './SocialLinks';
 
-const Footer = () => (
-  <footer>
-    <div className="contWidth foot">
-      <Social />
-    </div>
-  </footer>
-);
+const Footer = () => {
+  const component = (
+    <footer>
+      <SocialLinks
+        section="footer"
+      />
+    </footer>
+  );
+
+  return component;
+};
 
 export default Footer;

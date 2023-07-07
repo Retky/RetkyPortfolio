@@ -1,0 +1,38 @@
+$gray: #3c3a39;
+$light-gray: #7e7e7e;
+$dark-bg: #1c1a19;
+$light-bg: #f5f5f5;
+$main-orange: #ff6b00;
+$dark-orange: #ac4800;
+$light-orange: #ffa565;
+
+@mixin adaptative-width {
+  max-width: 360px;
+  width: 100vw;
+  box-sizing: border-box;
+  padding: 0 20px;
+
+  @media screen and (min-width: 768px) {
+    max-width: 1500px;
+    padding: 0 20px;
+  }
+}
+
+@mixin full-height {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+
+  & > div {
+    margin-top: 50px;
+  }
+}
+
+@mixin content-aurea {
+  display: flex;
+  flex-direction: column;
+
+  @media screen and (min-width: 768px) {
+    padding: 100px 20px;
+  }
+}

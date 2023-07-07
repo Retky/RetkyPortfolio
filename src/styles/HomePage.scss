@@ -1,0 +1,43 @@
+@import "Variables";
+
+.landing,
+.projects,
+.about,
+.stack,
+.contact {
+  @include full-height;
+
+  background-color: $dark-bg;
+  color: #fff;
+}
+
+.projects,
+.contact {
+  background-color: $light-bg;
+  color: $dark-bg;
+}
+
+.orange-btn {
+  background-color: $main-orange;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  margin-top: 35px;
+  width: 240px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    background-color: $light-orange;
+  }
+
+  &:active {
+    background-color: $dark-orange;
+  }
+}
+
+.nowrap {
+  white-space: nowrap;
+}
