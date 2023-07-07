@@ -1,6 +1,10 @@
 import '../styles/About.scss';
 
 const About = () => {
+  const resumeClickHandler = () => {
+    window.open('https://drive.google.com/uc?export=download&id=1ux6dewYZejhCwFATU4b1js-VpCTQGldU', '_blank');
+  };
+
   const view = (
     <div id="about">
       <div className="about">
@@ -36,7 +40,7 @@ const About = () => {
             mentor has allowed me to guide and inspire fellow developers, fostering a positive
             and productive working atmosphere.
           </p>
-          <button className="orange-btn" type="button">Get My Resume</button>
+          <button className="orange-btn" type="button" onClick={resumeClickHandler}>Get My Resume</button>
         </div>
       </div>
       <div className="stack">
